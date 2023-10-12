@@ -6,7 +6,7 @@ data=pd.read_csv(r'./Book1.csv')
 data['answers'] = data['answers'].apply(lambda x:''.join([i for i in x if i not in string.punctuation]))
 data['answers']=data['answers'].apply(lambda x:x.lower())
 # ind=int(input('enter the question number'))
-ind = st.number_input('Insert a number min is 0 and max is 37792',min_value=1,max_value=10)
+ind = st.number_input('Insert a number min is 0 and max  37792',min_value=1,max_value=10)
 # y=input('enter the ans')
 y=st.text_area(label='enter the answer')
 answers=data['answers']
